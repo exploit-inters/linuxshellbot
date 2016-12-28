@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "bot runnig"
+echo "bot running"
 while true;
    do
          python3 main.py
