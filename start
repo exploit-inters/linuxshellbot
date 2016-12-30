@@ -1,7 +1,9 @@
 #!/bin/bash
 echo "bot running"
+if [ ! -f conf.py ]; then
+   echo "File conf.py not found.Follow the guide on https://github.com/veetaw/linuxshellbot and create the conf.py"   
+fi
 while true;
-   do
-         python3 main.py
-done
-
+do
+         python3 main.py    
+done     
