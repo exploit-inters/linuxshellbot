@@ -15,6 +15,8 @@ def executecomands(message):
         command = " ".join(message.text.split(" ", 1)[1:])
         things = Popen(command, shell=True, stdout=PIPE, stderr=STDOUT, close_fds=True)
         output = things.stdout.read()
+        if not output:
+            output = u"\U0001F44D"
         bot.send_message(message.chat.id, output)
       return
    return
